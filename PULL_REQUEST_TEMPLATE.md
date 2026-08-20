@@ -2,11 +2,9 @@
 
 Closes #
 
-- Deterministic ticket ID:
-- Phase / Milestone:
-- Owning module / Workstream:
-
 ## Objective
+
+Describe the outcome this pull request delivers.
 
 ## Scope
 
@@ -14,25 +12,22 @@ Closes #
 
 ### Out of scope
 
-## Files changed
+## Acceptance Criteria
 
-## Contracts referenced
+- 
 
-## Security impact
+## Verification Evidence
 
-## Residency impact
+List the tests, checks, QA, or other evidence actually observed for this exact pull request head.
 
-## Observability impact
+## Risk Assessment
 
-## Tests run
+Document relevant security, privacy, data/migration, compatibility, operational, or product risk. Write `None` when no material risk applies.
 
-## Implementation log
+## Rollback
 
-## Rollback plan
+Describe how this change can be safely reverted or mitigated.
 
-## Stop conditions checked
+## Decisions / Deviations
 
-- [ ] No new architecture decision was introduced without an ADR.
-- [ ] No test was weakened, disabled, or bypassed.
-- [ ] The change stayed within the linked issue scope.
-- [ ] BYOC / tenant / security boundaries were not changed unless explicitly scoped.
+Record any material deviation from the linked ticket, architecture decision, or other decision introduced by this change. Write `None` when there are none.

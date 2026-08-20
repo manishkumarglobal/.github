@@ -1,0 +1,84 @@
+name: Engineering Ticket
+description: Create an implementation-ready engineering ticket.
+title: ""
+labels: []
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Feature
+        - Bug
+        - Improvement
+        - Technical Debt
+        - Security
+        - Operations
+        - Research
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem are we solving, and why does it matter?
+    validations:
+      required: true
+
+  - type: textarea
+    id: desired_outcome
+    attributes:
+      label: Desired Outcome
+      description: What should be true when this ticket is complete?
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is included in this ticket?
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of Scope
+      description: What is deliberately excluded from this ticket?
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Provide objective, testable criteria as a Markdown list.
+      placeholder: "- The expected behavior is verified."
+    validations:
+      required: true
+
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: What evidence will prove the work is complete?
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies_blockers
+    attributes:
+      label: Dependencies / Blockers
+      description: Write None if there are none.
+    validations:
+      required: true
+
+  - type: textarea
+    id: risks_constraints
+    attributes:
+      label: Risks / Constraints
+      description: Security, privacy, migration, compatibility, operational, or product constraints. Write None if none apply.
+    validations:
+      required: true
